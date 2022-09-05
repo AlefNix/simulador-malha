@@ -1,7 +1,7 @@
 //PARTES
   //base
-  const btnbase = document.getElementById('base');
-  btnbase.addEventListener('click', function(e){
+  const btnbasee = document.getElementById('base');
+  btnbasee.addEventListener('click', function(e){
     if(window.innerWidth <= 768){
       document.getElementById('acabamentos').style.display = "none";
       document.getElementById('deletebaselabel').style.display = "block";
