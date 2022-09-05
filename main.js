@@ -816,11 +816,20 @@ const lado = document.getElementById('switch-shadow2');
     if(document.getElementById('switch-shadow2').checked){
       document.getElementById('frente').style.visibility = "hidden";
       document.getElementById('costas').style.visibility = "visible";
+      document.querySelector(".frente5").style.visibility = "hidden";
+      document.querySelector(".frente4").style.visibility = "hidden";
     }else {
       document.getElementById('frente').style.visibility = "visible";
       document.getElementById('costas').style.visibility = "hidden" ;
+      if(document.getElementById('switch-shadow').checked){
+        document.querySelector(".frente5").style.visibility = "visible";
+      document.querySelector(".frente4").style.visibility = "hidden";
+    }else {
+      document.querySelector(".frente4").style.visibility = "visible";
+      document.querySelector(".frente5").style.visibility = "hidden";
     }
-  });
+  }
+});
 
 
 function sizeOfThings() {
