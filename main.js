@@ -1,7 +1,7 @@
 //PARTES
   //base
-  const btnbasee = document.getElementById('base');
-  btnbasee.addEventListener('click', function(e){
+  const btnbase = document.getElementById('base');
+  btnbase.addEventListener('click', function(e){
     if(window.innerWidth <= 768){
       document.getElementById('acabamentos').style.display = "none";
       document.getElementById('deletebaselabel').style.display = "block";
@@ -718,7 +718,7 @@
       document.getElementById('golaE').style.visibility = "hidden";
       document.querySelector(".frente5").style.visibility = "visible";
       document.querySelector(".frente4").style.visibility = "hidden";
-    }else {
+    }else{
       document.getElementById('golaI').style.visibility = "hidden";
       document.getElementById('golaE').style.visibility = "visible";
       document.querySelector(".frente4").style.visibility = "visible";
@@ -818,7 +818,9 @@ const lado = document.getElementById('switch-shadow2');
       document.getElementById('costas').style.visibility = "visible";
       document.querySelector(".frente5").style.visibility = "hidden";
       document.querySelector(".frente4").style.visibility = "hidden";
+      document.getElementById('switch-shadow').disabled = true;
     }else {
+      document.getElementById('switch-shadow').disabled = false;
       document.getElementById('frente').style.visibility = "visible";
       document.getElementById('costas').style.visibility = "hidden" ;
       if(document.getElementById('switch-shadow').checked){
